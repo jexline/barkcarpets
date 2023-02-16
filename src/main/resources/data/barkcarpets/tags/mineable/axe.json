@@ -1,0 +1,15 @@
+    {
+      "replace": false,
+      "values": [
+        "barkcarpets:oak_bark_carpet",
+        "barkcarpets:birch_bark_carpet",
+        "barkcarpets:spruce_bark_carpet",
+        "barkcarpets:dark_oak_bark_carpet",
+        "barkcarpets:jungle_bark_carpet",
+        "barkcarpets:mangrove_bark_carpet",
+        "barkcarpets:acacia_bark_carpet",
+        "barkcarpets:crimson_bark_carpet",
+        "barkcarpets:warped_bark_carpet"
+      ]
+    }
+

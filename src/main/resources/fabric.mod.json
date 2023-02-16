@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "barkcarpets",
+  "version": "1.0.3",
+
+  "name": "Bark Carpets",
+  "description": "This mod adds carpets made from bark!",
+  "authors": [
+    "Exline"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/exlines-bark-carpets",
+    "issues": "https://github.com/jexline/exline-mods-issues/issues"
+  },
+
+  "license": "all-rights-reserved",
+  "icon": "assets/barkcarpets/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.exline.barkcarpets.BarkCarpets"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "barkcarpets:block/jungle_bark_carpet"},
+    "facing=south": {"model": "barkcarpets:block/jungle_bark_carpet", "y": 180},
+    "facing=west": {"model": "barkcarpets:block/jungle_bark_carpet", "y": 270},
+    "facing=east": {"model": "barkcarpets:block/jungle_bark_carpet", "y": 90}
+  }
+}
