@@ -2,12 +2,14 @@ package com.exline.barkcarpets.init;
 
 import com.exline.barkcarpets.BarkCarpets;
 import com.exline.barkcarpets.block.BarkCarpetBlock;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class BlockInit {
     public static final BarkCarpetBlock OAK_BARK_CARPET = new BarkCarpetBlock(FabricBlockSettings.of(Material.WOOD).strength(0.1f,0.1f));
@@ -33,7 +35,9 @@ public class BlockInit {
     }
 
     public static void registerBlock(String name, BarkCarpetBlock block) {
-        Registry.register(Registry.BLOCK, new Identifier(BarkCarpets.MOD_ID, name), block);
-        Registry.register(Registry.ITEM, new Identifier(BarkCarpets.MOD_ID, name), new BlockItem(block, new Item.Settings().group(BarkCarpets.ITEM_GROUP)));
+        Registry.register(Registries.BLOCK, new Identifier(BarkCarpets.MOD_ID, name), block);
+        Registry.register(Registries.ITEM, new Identifier(BarkCarpets.MOD_ID, name), new BlockItem(block, new Item.Settings()));
+        ItemGroupEvents.modifyEntriesEvent(BarkCarpets.ITEM_GROUP).register(content -> {
+            content.add(block);});
     }
 }
